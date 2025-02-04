@@ -10,8 +10,4 @@ Route::get('/members', function (Request $request) {
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/members', [MemberController::class, 'show'])->name('apimembersshow');
-    Route::get('/flights', [FlightController::class, 'index'])->name('apiflightshome');
-    Route::post('/reservations', [ReservationController::class, 'store'])->name('apireservationsstore');
-    Route::delete('/reservations/{reservation_id}', [ReservationController::class, 'destroy'])->name('apireservationsdestroy');
 });
