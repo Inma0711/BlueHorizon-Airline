@@ -1,10 +1,20 @@
 @import url(header.css);
+@import url(home.css);
 
-
+:root {
+    --darkAquamarine:#354e55;
+    --aquamarine:#65a2ab;
+    --lightAquamarine:#b9d9dd;
+    --grey:#dbdbdb;
+    --lightBlue:#deedef;
+    --white:#ffffff;
+}
 
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
+

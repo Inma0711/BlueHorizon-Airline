@@ -1,11 +1,19 @@
 <header>
     <nav class="navbar">
-        <ul>
-            <li><a href="{{route('home')}}">BH</a></li>
-            <li><a href="">Vuelos</a></li>
-            <li>
-                <a href="">
-                    <img src="{{ asset('img/icons/user.png') }}" alt="BlueHorizon logo" />
+        <ul class="navbar-container">
+            <!-- Logo y Enlace a la izquierda -->
+            <li class="navbar-item left">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('img/icons/logoWeb.png') }}" alt="Web logo" />
+                </a>
+                <!-- Enlace "Vuelos" al lado del logo -->
+                <a href="" class="menu-link">Vuelos</a>
+            </li>
+            
+            <!-- Icono de Usuario a la derecha -->
+            <li class="navbar-item right">
+                <a href="#">
+                    <img src="{{ asset('img/icons/user.png') }}" alt="BlueHorizon icon" />
                 </a>
             </li>
         </ul>

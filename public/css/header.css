@@ -1,3 +1,69 @@
-header {
-    
+/* Reset para quitar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color: var(--lightBlue); /* Cambia esto al color de tu preferencia */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra debajo del navbar */
+}
+
+/* Contenedor para los elementos del navbar */
+.navbar-container {
+    display: flex; /* Flexbox para organizar los elementos */
+    align-items: center; /* Alinea verticalmente */
+    list-style: none;
+}
+
+/* Estilos de cada ítem del navbar */
+.navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: var(--darkAquamarine); /* Cambia el color según tu diseño */
+}
+
+/* Logo y Enlace "Vuelos" a la izquierda */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    max-width: 80px; /* Ajusta el tamaño del logo */
+    margin-left: 30px;
+}
+
+/* Estilos del enlace "Vuelos" */
+.menu-link {
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 25px;
+    color: var(--aquamarineDark); /* Cambia el color según tu diseño */
+    text-decoration: none; /* Quita subrayado */
+}
+
+
+
+/* Icono de Usuario a la derecha */
+.right {
+    margin-left: auto; /* Esto empuja el icono a la derecha */
+}
+
+.right img {
+    margin-right: 40px;
+    width: 35px; /* Ajusta el tamaño del icono de usuario */
+    height: auto;
+}
+
+/* Efectos de hover */
+.navbar-item a:hover {
+    color: #fbbf24; /* Color de hover */
 }
