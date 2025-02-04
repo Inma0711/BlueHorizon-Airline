@@ -10,7 +10,7 @@
     
     <body>
         <div id="app">
-           
+           <x-header/>
 
             <main>
             @yield('content')
